@@ -1,3 +1,8 @@
+// Name: Mukwaya Lwere
+// Class: CS 81 JavaScript
+// Module 3 Assignment 3A: Git & GitHub
+ // Date: 07/03/2025
+
 // Greet a person by name and return a friendly message
 function greet(personName) {
   return "Hello, " + personName + "!"; // Builds a personalized greeting
@@ -35,4 +40,4 @@ farewell("Mukwaya"); // Say goodbye
 logEntry("2025-07-03", "Systems rebooted successfully."); // Log a past event
 thank("Mukwaya"); // Show appreciation
 logEntry(getTodayDate(), "Started journaling with new functions."); // Log something using today's date
-emphasizeNote("backup completed"); // Highlight a critical message
+emphasizeNote("backup completed"); // Highlight a critical message 
