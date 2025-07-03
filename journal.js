@@ -1,28 +1,38 @@
-// Greet a user by name
-function greet(name) {
-  return "Hello, " + name + "!"; // Returns a greeting string with the user's name
+// Greet a person by name and return a friendly message
+function greet(personName) {
+  return "Hello, " + personName + "!"; // Builds a personalized greeting
 }
 
-// Function Farewell.
-// This function takes one argument called (MyName) which is a string
-function farewell(MyName) {
-  console.log("Goodbye, " + MyName + "!"); // Inside the function, it uses console.log() to print a farewell message to the console.
+// Say goodbye to someone by name
+function farewell(personName) {
+  console.log("Goodbye, " + personName + "!"); // Prints a farewell message to the console
 }
 
-// Function LogEntry
-// This is a function called LogEntry with two parameters (CurrentDate) and (MyMessage)
-function logEntry(CurrentDate, MyMessage) {
-  console.log(`[${CurrentDate}] ${MyMessage}`); // It uses console.log() to print a formatted message to the console.
+// Record a journal entry with a date and message
+function logEntry(entryDate, journalMessage) {
+  console.log(`[${entryDate}] ${journalMessage}`); // Formats and prints the journal entry
 }
 
-// Function Thank
-// This function takes one argument (Name) and prints a thank-you message
-function thank(Name) {
-  console.log("Thank you, " + Name + "!"); // Outputs a thank-you message to the console
+// Express appreciation to someone by name
+function thank(personName) {
+  console.log("Thank you, " + personName + "!"); // Outputs a thank-you message
 }
 
-// Call the functions
-console.log(greet("Mukwaya")); // Calls the greet function and logs the returned greeting
-farewell("Mukwaya"); // Calls the farewell function with the name "Mukwaya"
-logEntry("2025-07-03", "Systems rebooted successfully."); // Logs a system message with a date
-thank("Mukwaya"); // Calls the thank function to express gratitude
+// Get today's date in YYYY-MM-DD format
+function getTodayDate() {
+  const now = new Date();
+  return now.toISOString().split("T")[0]; // Extracts just the date portion
+}
+
+// Highlight an important note by surrounding it with asterisks
+function emphasizeNote(noteText) {
+  console.log("*** " + noteText.toUpperCase() + " ***"); // Makes the note stand out visually
+}
+
+// Call the functions to demonstrate how they work
+console.log(greet("Mukwaya")); // Show a greeting
+farewell("Mukwaya"); // Say goodbye
+logEntry("2025-07-03", "Systems rebooted successfully."); // Log a past event
+thank("Mukwaya"); // Show appreciation
+logEntry(getTodayDate(), "Started journaling with new functions."); // Log something using today's date
+emphasizeNote("backup completed"); // Highlight a critical message
